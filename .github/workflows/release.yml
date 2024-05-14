@@ -178,7 +178,7 @@ jobs:
       id: createRelease
       name: Create ${{ steps.releaseNote.outputs.version }} Runner Release
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
       with:
         tag_name: "v${{ steps.releaseNote.outputs.version }}"
         release_name: "v${{ steps.releaseNote.outputs.version }}"
