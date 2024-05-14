@@ -5,6 +5,9 @@ on:
   push:
     paths:
     - releaseVersion
+    
+permissions:
+  contents: write # This grants write access to the repository contents
 
 jobs:
   check:
