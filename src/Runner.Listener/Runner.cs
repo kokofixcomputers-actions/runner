@@ -242,7 +242,7 @@ namespace GitHub.Runner.Listener
                     // Error if runner not configured.
                     if (!configManager.IsConfigured())
                     {
-                        _term.WriteError("Runner is not configured.");
+                        _term.WriteError("Runner is not configured. Please configure and try again.");
                         PrintUsage(command);
                         return Constants.Runner.ReturnCode.TerminatedError;
                     }
